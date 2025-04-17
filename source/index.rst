@@ -8,7 +8,7 @@ Excel 插件, Excel-to-JSON, 在 Excel 中将 Excel 转换为 JSON（网页在�
 Excel to JSON 是一个 Microsoft Excel 插件，可以在 Excel 中将 Excel 转换为 JSON。使用 Excel-to-JSON 插件可以转换扁平和嵌套的 JSON 格式。
 该插件可在 Microsoft 商店（Appsource）获取，可以直接在 Excel 中访问，无需下载，在 Excel 中单击一下即可运行插件。
 
-当前为中文版文档，英文版文件详见https://excel-to-json.wtsolutions.cn/en/latest/
+当前为中文版文档，英文版文件详见 https://excel-to-json.wtsolutions.cn/en/latest/
 
 This is Simplified Chinese version of the documentation, refer to English version https://excel-to-json.wtsolutions.cn/en/latest/
 
