@@ -7,7 +7,7 @@
 Excel-to-JSON现已在Microsoft Appsource(原Office商店)上架。 https://store.office.com/app.aspx?assetid=WA104380263
 
 ## 文档
-[https://excel-to-json.wtsolutions.cn](https://excel-to-json.wtsolutions.cn)
+[https://excel-to-json.wtsolutions.cn/zh-cn/latest/](https://excel-to-json.wtsolutions.cn/zh-cn/latest/)
 
 ## 开始使用
 
