@@ -35,6 +35,10 @@
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
+### 使用插件的视频演示
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114345920959097&bvid=BV1jdoAYHEDF&cid=29442509957&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 ## 示例
 
 **Excel表格示例1**

@@ -22,6 +22,8 @@ Excel-to-JSON插件提供了一系列专业版功能，这些功能仅对已订�
 
 订阅条款请参考[使用条款](termsofuse.md)
 
+![微信客服](https://invest.wtsolutions.cn/wechat.png)
+
 ## 专业代码
 
 专业代码是您在Stripe上购买Excel-to-JSON插件时使用的`电子邮箱地址`。此代码是访问专业版功能的必要条件。
