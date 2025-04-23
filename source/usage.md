@@ -1,5 +1,7 @@
 # 使用说明
 
+[English](https://excel-to-json.wtsolutions.cn/en/latest/usage.html)
+
 本文档适用于Excel-to-JSON版本2.1.0
 
 强烈建议先阅读[入门指南](getstarted.md)部分。

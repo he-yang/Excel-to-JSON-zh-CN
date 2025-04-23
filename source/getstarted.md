@@ -1,5 +1,8 @@
 # 开始使用
 <a name="Introduction"></a>
+
+[English](https://excel-to-json.wtsolutions.cn/en/latest/getstarted.html)
+
 ## 简介
 
 Excel to JSON是一款Microsoft Excel插件，可以将Excel数据转换为JSON格式。

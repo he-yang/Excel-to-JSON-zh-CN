@@ -1,5 +1,7 @@
 # 专业版功能 Pro Features
 
+[English](https://excel-to-json.wtsolutions.cn/en/latest/profeatures.html)
+
 Excel-to-JSON插件提供了一系列专业版功能，这些功能仅对已订阅的用户开放。
 
 ## 订阅
