@@ -15,6 +15,8 @@ Excel-to-JSON插件提供了一系列专业版功能，这些功能仅对已订�
 
 每个专业代码Pro Code可支持10台设备访问专业版功能。7天试用期结束后，您可以随时取消订阅，取消将在当前计费周期结束时生效。
 
+每个专业代码Pro Code同时适用于WTSolutions提供的Excel-to-JSON和[JSON-to-Excel](https://json-to-excel.wtsolutions.cn/zh-cn/latest/)两个插件。
+
 通过Stripe订阅：[https://buy.stripe.com/00gdQT2iz0Vp32E002](https://buy.stripe.com/00gdQT2iz0Vp32E002)
 支付方式：
 - 银行卡（Visa、Mastercard、American Express、JCB、银联）
