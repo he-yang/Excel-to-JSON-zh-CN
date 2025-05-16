@@ -2,7 +2,7 @@
 
 [English](https://excel-to-json.wtsolutions.cn/en/latest/usage.html)
 
-本文档适用于Excel-to-JSON版本2.1.0
+本文档适用于Excel-to-JSON版本2.1.1
 
 强烈建议先阅读[入门指南](getstarted.md)部分。
 
@@ -149,7 +149,8 @@
 有几种方式可以将生成的JSON保存到本地计算机：
 
 * 复制粘贴。JSON生成后，您可以在插件中看到它们，并可以简单地复制粘贴到任何地方
-* Copy to Clipboard。(Mac用户不可用) JSON生成后，您可以找到"Copy to Clipboard"按钮，点击该按钮，JSON将被复制到剪贴板
+* Copy to Clipboard。JSON生成后，您可以找到"Copy to Clipboard"按钮，点击该按钮，JSON将被复制到剪贴板
+* Save As （Mac用户不可用）。JSON生成后，您可以找到"Save As"按钮，点击该按钮，您可以将JSON保存到本地计算机
 
 ## 专业功能
 Excel-to-JSON为有效订阅用户提供专业功能：
@@ -158,5 +159,6 @@ Excel-to-JSON为有效订阅用户提供专业功能：
 * **空单元格处理**：空单元格的三种处理方式：空字符串""、JSON null或直接排除
 * **布尔值格式**：三种布尔值转换格式：JSON true/false、字符串"true"/"false"或数字1/0
 * **日期格式**：日期转换选项：自1990-01-01以来的天数或ISO 8601字符串格式
+* **另存为文件名**: 在使用Save As功能时，您可以自定义文件名
 
 专业功能的详细信息请参阅[专业功能](profeatures.md)部分。

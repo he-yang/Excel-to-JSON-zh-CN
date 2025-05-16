@@ -232,6 +232,27 @@ Excel-to-JSON插件提供了一系列专业版功能，这些功能仅对已订�
     "生日": "1995-05-15T00:00:00.000Z"
 }]
 ```
+## 保存文件名
+
+保存文件名功能允许您在转换完成后点击"Save As"按钮时，为JSON输出文件指定自定义文件名。当您在此字段中输入文件名时，转换后的JSON数据将使用您指定的名称保存，而不是默认名称(excel-to-json.json)。
+
+**文件名要求：**
+- 最大长度：200个字符（不包括扩展名）
+- 文件扩展名将自动设置为.json
+- 不能以点(.)或空格开头或结尾
+- 不能使用Windows保留名称（如CON、PRN、AUX等）
+- 不能包含以下字符：< > : \ / | ? *
+
+**示例：**
+- 有效文件名：data.json、my_data.json、export_2024.json
+- 无效文件名：.data.json、con.json、my:data.json
+
+**支持平台：**
+- Windows版Excel：支持
+- Office.com或Onedrive上的Web版Excel：支持
+- Mac版Excel：不支持
+  - 如果您是Mac用户，可以使用Office.com或Onedrive上的Web版Excel
+
 
 ## 更多功能
 

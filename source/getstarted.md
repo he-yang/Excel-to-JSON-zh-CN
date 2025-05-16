@@ -45,7 +45,7 @@ Excel to JSON是一款Microsoft Excel插件，可以将Excel数据转换为JSON�
 * 如果您订阅了"Pro Features"，可以设置更多选项
 * 点击"Go"按钮
 * 您将在"Go"按钮下方看到转换后的JSON
-* 您可以"复制+粘贴"或"Copy to Clipboard"JSON并保存到电脑
+* 您可以"复制+粘贴"或"Copy to Clipboard"或"Save As"JSON并保存到电脑
 
 ### 使用插件的视频演示
 
