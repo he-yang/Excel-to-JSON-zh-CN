@@ -2,7 +2,7 @@
 
 [English](https://excel-to-json.wtsolutions.cn/en/latest/usage.html)
 
-本文档适用于Excel-to-JSON版本2.1.1
+本文档适用于Excel-to-JSON版本2.3.0
 
 强烈建议先阅读[入门指南](getstarted.md)部分。
 
@@ -158,6 +158,7 @@ Excel-to-JSON为有效订阅用户提供专业功能：
 * **嵌套分隔符**：支持自定义嵌套JSON键的分隔符(/, _, .)
 * **空单元格处理**：空单元格的三种处理方式：空字符串""、JSON null或直接排除
 * **布尔值格式**：三种布尔值转换格式：JSON true/false、字符串"true"/"false"或数字1/0
+* **单对象json输出格式**：当只有一行数据时，是否输出为单对象JSON格式，或者输出为数组格式
 * **日期格式**：日期转换选项：自1990-01-01以来的天数或ISO 8601字符串格式
 * **另存为文件名**: 在使用Save As功能时，您可以自定义文件名
 
