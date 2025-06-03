@@ -4,7 +4,7 @@
 
 Excel-to-JSON插件提供了一系列专业版功能，这些功能仅对已订阅的用户开放。
 
-## 订阅
+## 订阅、支付和取消
 
 7天免费试用，之后将按以下费率按月收费。您可以在第7天之前随时取消订阅，不会被扣费：
 - 美元 US$2.66 / 月
@@ -17,14 +17,22 @@ Excel-to-JSON插件提供了一系列专业版功能，这些功能仅对已订�
 
 每个专业代码Pro Code同时适用于WTSolutions提供的Excel-to-JSON和[JSON-to-Excel](https://json-to-excel.wtsolutions.cn/zh-cn/latest/)两个插件。
 
-通过Stripe订阅：[https://buy.stripe.com/00gdQT2iz0Vp32E002](https://buy.stripe.com/00gdQT2iz0Vp32E002)
+### 通过 Stripe 订阅、支付
+
+链接在此 [https://buy.stripe.com/00gdQT2iz0Vp32E002](https://buy.stripe.com/00gdQT2iz0Vp32E002)
+
 支付方式：
 - 银行卡（Visa、Mastercard、American Express、JCB、银联）
-- Apple Pay（需使用苹果设备打开上述链接）
-- Google Pay（需使用安卓设备打开上述链接）
+- Apple Pay（需要使用您的 Apple/IOS/Mac 设备打开上述链接）
+- Google Pay（需要使用您的 Google/Android 设备打开上述链接）
 - Link
 
-订阅条款请参考[使用条款](termsofuse.md)
+有关订阅条款，请参阅 [使用条款](termsofuse.md)
+
+### 取消订阅
+
+您可以随时取消订阅。当前计费周期结束后，您将无法再访问专业功能。
+链接在此 [https://billing.stripe.com/p/login/5kQ4gyadZ7p22JY3V83Je00](https://billing.stripe.com/p/login/5kQ4gyadZ7p22JY3V83Je00)
 
 ![微信客服](https://invest.wtsolutions.cn/wechat.png)
 
