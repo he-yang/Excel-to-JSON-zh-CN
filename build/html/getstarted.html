@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-cn" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name='description' content=“Excel-to-JSON-documentation 1. 快速开始”>
+    
+  <title>1. 快速开始 &mdash; Excel-to-JSON 3.0.0.0 documentation</title>
+    <!-- 添加自定义的 meta 标签 -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Excel to JSON",
+          "description": "A Microsoft Excel add-in that converts Excel spreadsheets into JSON format directly within Excel. Ideal for developers and data analysts.",
+          "applicationCategory": "Data Conversion",
+          "operatingSystem": "Web"
+        }
+    </script>
+    <meta name="description"
+        content="Excel add-in Excel-to-JSON Convert Excel to JSON within Excel (web online, windows, mac, linux) Excel to JSON is a Microsoft Excel add-in which can convert Excel to JSON within Excel. Both flat and nested JSON can be converted using Excel-to-JSON add-in.
+        This add-in is available at the Microsoft store- Appsource, which can be accessed within Excel, so it does not require any download, a simple click within Excel would run the add-in.">
+    <meta name="keywords"
+        content="excel-to-json, json-to-excel, excel to json, json to excel, json, excel, conversion, mac, windows, transfer, spreadsheets, microsoft, add-in, web, online">
+    <link rel="icon" href="https://t.wtsolutions.cn/favicon.ico">
+
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="https://excel-to-json.wtsolutions.cn/zh-cn/latest/getstarted.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=6063c007"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/custom.js?v=bfd0a399"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5. 专业功能 Pro Features" href="profeatures.html" />
+    <link rel="prev" title="Excel-to-JSON by WTSolutions, Excel 插件, 在 Excel 中将 Excel 转换为 JSON（网页在线版，Windows，Mac，Linux）" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Excel-to-JSON
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 快速开始</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id2">2. 系统要求</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id3">3. 快速入门</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#excel-json">3.1 （旁）加载 Excel 转 JSON</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#excel">获取加载项的视频指南（在 Excel 中旁加载）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3.2 使用 Excel 转 JSON</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id5">准备您的 Excel 表格</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#json">输出 JSON 导出</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">使用加载项的视频指南</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">3.3 转换设置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id8">选择标题、行/列</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">转换模式</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">嵌套 JSON 键分隔符</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">其他设置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id12">4. 示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#excel-1">4.1 示例 Excel 表格 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#excel-2">4.2 示例 Excel 表格 2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">5. 专业功能 Pro Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">联系方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dependencies.html">Dependencies</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Excel-to-JSON</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">1. 快速开始</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/getstarted.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>1. 快速开始<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p><a name="Introduction"></a>
+<a class="reference external" href="https://excel-to-json.wtsolutions.cn/latest/getstarted.html">English</a></p>
+<p>WTSolutions 的 Excel 转 JSON 是一款<strong>Microsoft Excel 加载项</strong>或<strong>Web 应用程序</strong>，可以将 Excel 转换为 JSON，支持转换扁平 JSON 和嵌套 JSON。</p>
+</section>
+<section id="id2">
+<h1>2. 系统要求<a class="headerlink" href="#id2" title="Link to this heading"></a></h1>
+<p><a name="Requirements"></a>
+<code class="docutils literal notranslate"><span class="pre">选项</span> <span class="pre">1.</span> <span class="pre">在</span> <span class="pre">Web</span> <span class="pre">浏览器中加载</span> <span class="pre">Excel</span> <span class="pre">转</span> <span class="pre">JSON</span></code></p>
+<ul class="simple">
+<li><p>支持 JavaScript 的 Web 浏览器，如 Google Chrome、Mozilla Firefox、Safari 或 Microsoft Edge。</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">选项</span> <span class="pre">2.</span> <span class="pre">在</span> <span class="pre">Excel</span> <span class="pre">中旁加载</span> <span class="pre">Excel</span> <span class="pre">转</span> <span class="pre">JSON</span></code>（推荐）</p>
+<ul class="simple">
+<li><p>Excel 2013 Service Pack 1 或更高版本，</p></li>
+<li><p>Excel 2016 for Mac，</p></li>
+<li><p>Excel 2016 或更高版本，</p></li>
+<li><p>Excel Online，</p></li>
+<li><p>Office 365 等。</p></li>
+</ul>
+</section>
+<section id="id3">
+<h1>3. 快速入门<a class="headerlink" href="#id3" title="Link to this heading"></a></h1>
+<p><a name="Quickstarted"></a>
+本快速入门适用于 v3.0.0 版本</p>
+<section id="excel-json">
+<h2>3.1 （旁）加载 Excel 转 JSON<a class="headerlink" href="#excel-json" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">选项</span> <span class="pre">1.</span> <span class="pre">在</span> <span class="pre">Web</span> <span class="pre">浏览器中加载</span> <span class="pre">Excel</span> <span class="pre">转</span> <span class="pre">JSON</span></code></p>
+<ul class="simple">
+<li><p>打开支持 JavaScript 的 Web 浏览器，如 Google Chrome、Mozilla Firefox、Safari 或 Microsoft Edge。</p></li>
+<li><p>在 Web 浏览器中打开以下 URL：<a href="https://s.wtsolutions.cn/excel-to-json.html" target="_blank">https://s.wtsolutions.cn/excel-to-json.html</a></p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">选项</span> <span class="pre">2.</span> <span class="pre">在</span> <span class="pre">Excel</span> <span class="pre">中旁加载</span> <span class="pre">Excel</span> <span class="pre">转</span> <span class="pre">JSON</span></code>（推荐）</p>
+<ul class="simple">
+<li><p>在 Excel 2013/2016、Excel Online 或 Office 365 中打开一个新的数据表。</p></li>
+<li><p><strong>主页</strong>选项卡或<strong>插入</strong>选项卡 &gt; 加载项</p></li>
+<li><p>在搜索框中，输入“Excel to JSON”</p></li>
+<li><p>按照屏幕上的说明安装加载项，您将在<strong>主页</strong>选项卡上看到一个“JSON 转 Excel”按钮。</p></li>
+<li><p><strong>主页</strong>选项卡 &gt; Excel 转 JSON &gt; 转换</p></li>
+<li><p>现在您已准备好使用此加载项。</p></li>
+</ul>
+<section id="excel">
+<h3>获取加载项的视频指南（在 Excel 中旁加载）<a class="headerlink" href="#excel" title="Link to this heading"></a></h3>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114329529684152&bvid=BV15ddBYLEaV&cid=29388573290&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8772217510669640"
+     data-ad-slot="2653271427"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p><a name="Useadd-in"></a></p>
+</section>
+</section>
+<section id="id4">
+<h2>3.2 使用 Excel 转 JSON<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>准备您的 Excel 表格</p></li>
+<li><p>通过以下两种方式之一加载您的 Excel 数据：</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">在</span> <span class="pre">Web</span> <span class="pre">浏览器中加载</span> <span class="pre">Excel</span> <span class="pre">转</span> <span class="pre">JSON</span></code>：将 Excel 数据复制并粘贴到文本区域，或者</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">在</span> <span class="pre">Excel</span> <span class="pre">中旁加载</span> <span class="pre">Excel</span> <span class="pre">转</span> <span class="pre">JSON</span></code>：直接从 Excel 工作表中选择您的数据。</p></li>
+</ol>
+</li>
+<li><p>设置转换设置</p></li>
+<li><p>点击“开始”按钮</p></li>
+<li><p>之后您将在“开始”按钮下方看到转换后的 JSON</p></li>
+</ul>
+<section id="id5">
+<h3>准备您的 Excel 表格<a class="headerlink" href="#id5" title="Link to this heading"></a></h3>
+<p>有两种方式可以将 Excel 表格加载到 Excel 转 JSON 中：</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">在</span> <span class="pre">Web</span> <span class="pre">浏览器中加载</span> <span class="pre">Excel</span> <span class="pre">转</span> <span class="pre">JSON</span></code></p>
+<ul>
+<li><p>将 Excel 数据复制并粘贴到文本区域</p></li>
+<li><p>您可以复制并粘贴来自 Excel、Google Sheets 或任何其他 Excel 兼容软件的数据，数据之间用 Tab 分隔</p></li>
+<li><p>您也可以复制并粘贴逗号分隔的 CSV 数据</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">在</span> <span class="pre">Excel</span> <span class="pre">中旁加载</span> <span class="pre">Excel</span> <span class="pre">转</span> <span class="pre">JSON</span></code>：直接从 Excel 工作表中选择您的数据。</p></li>
+</ul>
+</section>
+<section id="json">
+<h3>输出 JSON 导出<a class="headerlink" href="#json" title="Link to this heading"></a></h3>
+<p>有几种方法可以将生成的 JSON 保存到您的本地计算机。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">复制和粘贴</span></code>。JSON 生成后，您将在文本区域中看到它们，您可以简单地将它们复制并粘贴到任何您想要的地方。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">复制到剪贴板</span></code>。JSON 生成后，您可以找到“复制到剪贴板”按钮，点击该按钮，JSON 将被复制到您的剪贴板。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">保存到文件</span></code>。（<code class="docutils literal notranslate"><span class="pre">Excel</span> <span class="pre">for</span> <span class="pre">Mac</span></code> 用户不可用）JSON 生成后，您可以找到“另存为”按钮，点击该按钮，系统将提示您将 JSON 保存到文件。</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>使用加载项的视频指南<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114345920959097&bvid=BV1jdoAYHEDF&cid=29442509957&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</section>
+</section>
+<section id="id7">
+<h2>3.3 转换设置<a class="headerlink" href="#id7" title="Link to this heading"></a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Excel 单元格中的换行将呈现为 `\n`
+</pre></div>
+</div>
+<section id="id8">
+<h3>选择标题、行/列<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<p>默认情况下，Excel 转 JSON 将第一行作为标题，但您也可以选择“第一列作为标题”。</p>
+<p>如果选择 <code class="docutils literal notranslate"><span class="pre">第一行作为标题</span></code>：</p>
+<p>第一（左）列将被视为标题列（JSON 对象的键），右侧的列将成为 JSON 对象的值。”</p>
+<p>如果选择 <code class="docutils literal notranslate"><span class="pre">第一列作为标题</span></code>：</p>
+<p>第一（上）行将被视为标题行（JSON 对象的键），下方的行将成为 JSON 对象的值。</p>
+</section>
+<section id="id9">
+<h3>转换模式<a class="headerlink" href="#id9" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">扁平</span> <span class="pre">JSON</span> <span class="pre">模式</span></code></p>
+<ul>
+<li><p>简单地将 Excel 数据表转换为扁平 JSON。</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">嵌套</span> <span class="pre">JSON</span> <span class="pre">模式</span></code></p>
+<ul>
+<li><p>首先将 Excel 数据表转换为扁平 JSON</p></li>
+<li><p>然后，使用“Flat”<a class="reference external" href="https://www.npmjs.com/package/flat">https://www.npmjs.com/package/flat</a> 将带有分隔键的对象展开</p></li>
+<li><p>Excel 转 JSON 调用 unflatten() 方法，分隔符为“.”，overwrite 为 true。如果您已订阅“专业功能”，则可以设置其他分隔符。</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id10">
+<h3>嵌套 JSON 键分隔符<a class="headerlink" href="#id10" title="Link to this heading"></a></h3>
+<p>用于分隔 JSON 输出中嵌套属性的分隔符。</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">点</span> <span class="pre">(.)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">下划线</span> <span class="pre">(_)</span></code> [专业功能]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">双下划线</span> <span class="pre">(__)</span></code> [专业功能]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">斜杠</span> <span class="pre">(/)</span></code> [专业功能]</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>其他设置<a class="headerlink" href="#id11" title="Link to this heading"></a></h3>
+<p>其他设置将在 <a class="reference internal" href="profeatures.html"><span class="std std-doc">专业功能</span></a> 中描述</p>
+</section>
+</section>
+</section>
+<section id="id12">
+<h1>4. 示例<a class="headerlink" href="#id12" title="Link to this heading"></a></h1>
+<section id="excel-1">
+<h2>4.1 示例 Excel 表格 1<a class="headerlink" href="#excel-1" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>姓名</p></th>
+<th class="head"><p>年龄</p></th>
+<th class="head"><p>公司</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>David</p></td>
+<td><p>27</p></td>
+<td><p>WTSolutions</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ton</p></td>
+<td><p>26</p></td>
+<td><p>WTSolutions</p></td>
+</tr>
+<tr class="row-even"><td><p>Kitty</p></td>
+<td><p>30</p></td>
+<td><p>Microsoft</p></td>
+</tr>
+<tr class="row-odd"><td><p>Linda</p></td>
+<td><p>30</p></td>
+<td><p>Microsoft</p></td>
+</tr>
+<tr class="row-even"><td><p>Joe</p></td>
+<td><p>40</p></td>
+<td><p>Github</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>使用扁平 JSON 模式</p>
+</div></blockquote>
+<p><strong>示例 JSON</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;姓名&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;David&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;年龄&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">27</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;公司&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WTSolutions&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;姓名&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Ton&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;年龄&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">26</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;公司&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;WTSolutions&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;姓名&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Kitty&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;年龄&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;公司&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;姓名&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Linda&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;年龄&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;公司&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Microsoft&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;姓名&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Joe&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;年龄&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;公司&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Github&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="excel-2">
+<h2>4.2 示例 Excel 表格 2<a class="headerlink" href="#excel-2" title="Link to this heading"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>id</p></th>
+<th class="head"><p>student.name</p></th>
+<th class="head"><p>student.familyname</p></th>
+<th class="head"><p>student.age</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Meimei</p></td>
+<td><p>Han</p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Lily</p></td>
+<td><p>Jaskson</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Elon</p></td>
+<td><p>Mask</p></td>
+<td><p>18</p></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<div><p>使用扁平 JSON 模式</p>
+</div></blockquote>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span>
+<span class="w">	</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Meimei&quot;</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.familyname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Han&quot;</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span>
+<span class="p">},</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lily&quot;</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.familyname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jaskson&quot;</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span>
+<span class="p">},</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Elon&quot;</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.familyname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mask&quot;</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student.age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span>
+<span class="p">}]</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>使用嵌套 JSON 模式，并以点 . 作为分隔符</p>
+</div></blockquote>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span>
+<span class="w">	</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Meimei&quot;</span><span class="p">,</span>
+<span class="w">		</span><span class="nt">&quot;familyname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Han&quot;</span><span class="p">,</span>
+<span class="w">		</span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">},</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Lily&quot;</span><span class="p">,</span>
+<span class="w">		</span><span class="nt">&quot;familyname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Jaskson&quot;</span><span class="p">,</span>
+<span class="w">		</span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">},</span><span class="w"> </span><span class="p">{</span>
+<span class="w">	</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">	</span><span class="nt">&quot;student&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">		</span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Elon&quot;</span><span class="p">,</span>
+<span class="w">		</span><span class="nt">&quot;familyname&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mask&quot;</span><span class="p">,</span>
+<span class="w">		</span><span class="nt">&quot;age&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span>
+<span class="w">	</span><span class="p">}</span>
+<span class="p">}]</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Excel-to-JSON by WTSolutions, Excel 插件, 在 Excel 中将 Excel 转换为 JSON（网页在线版，Windows，Mac，Linux）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="profeatures.html" class="btn btn-neutral float-right" title="5. 专业功能 Pro Features" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022~2025, WTSolutions.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
