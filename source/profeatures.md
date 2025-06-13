@@ -25,6 +25,7 @@ Excel转JSON加载项提供了一组专业功能，增强了加载项的功能�
 - 银行卡（Visa、Mastercard、American Express、JCB、银联）
 - Apple Pay（需要使用Apple/IOS/Mac设备打开上述链接）
 - Google Pay（需要使用Google/Andriod设备打开上述链接）
+- Alipay 支付宝
 - Link
 
 有关订阅条款，请参阅[使用条款](termsofuse.md)
