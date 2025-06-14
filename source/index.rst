@@ -16,6 +16,7 @@ This is Simplified Chinese version of the documentation, refer to English versio
 
    getstarted.md
    profeatures.md
+   pricing.md
    contact.md
    termsofuse.md
    privacy.md   

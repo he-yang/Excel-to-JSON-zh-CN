@@ -20,7 +20,7 @@ WTSolutions 的 Excel 转 JSON 是一款**Microsoft Excel 加载项**或**Web �
 
 # 3. 快速入门
 <a name="Quickstarted"></a> 
-本快速入门适用于 v3.0.0 版本
+本快速入门适用于 v3.1.0 版本
 
 
 ## 3.1 （旁）加载 Excel 转 JSON
@@ -61,7 +61,7 @@ WTSolutions 的 Excel 转 JSON 是一款**Microsoft Excel 加载项**或**Web �
 * 准备您的 Excel 表格
 * 通过以下两种方式之一加载您的 Excel 数据：
     1. `在 Web 浏览器中加载 Excel 转 JSON`：将 Excel 数据复制并粘贴到文本区域，或者
-    2. `在 Excel 中旁加载 Excel 转 JSON`：直接从 Excel 工作表中选择您的数据。
+    2. `在 Excel 中旁加载 Excel 转 JSON`：直接从 Excel 工作表中选择您的数据, 或者，可以选择转换所有非隐藏数据表[Pro Feature]，或者选择转换所有数据表[Pro Feature]。
 * 设置转换设置
 * 点击“开始”按钮
 * 之后您将在“开始”按钮下方看到转换后的 JSON
@@ -74,7 +74,10 @@ WTSolutions 的 Excel 转 JSON 是一款**Microsoft Excel 加载项**或**Web �
     *  将 Excel 数据复制并粘贴到文本区域
     *  您可以复制并粘贴来自 Excel、Google Sheets 或任何其他 Excel 兼容软件的数据，数据之间用 Tab 分隔
     *  您也可以复制并粘贴逗号分隔的 CSV 数据
-* `在 Excel 中旁加载 Excel 转 JSON`：直接从 Excel 工作表中选择您的数据。
+* `在 Excel 中旁加载 Excel 转 JSON`：
+    * 直接从 Excel 工作表中选择您的数据
+    * 转换所有非隐藏数据表[Pro Feature]
+    * 转换所有数据表[Pro Feature]
 
 ### 输出 JSON 导出
 
