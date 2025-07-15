@@ -17,6 +17,11 @@ WTSolutions 的 Excel 转 JSON 是一款**Microsoft Excel 加载项**或**Web �
 * Excel Online，
 * Office 365 等。
 
+`选项 3. HTTPS POST request to Excel to JSON`
+[https://s.wtsolutions.cn/excel-to-json-api.html](https://s.wtsolutions.cn/excel-to-json-api.html)
+
+`选项 4. AI Model MCP SSE request to Excel to JSON`
+[https://s.wtsolutions.cn/excel-to-json-mcp.html](https://s.wtsolutions.cn/excel-to-json-mcp.html)
 
 # 3. 快速入门
 <a name="Quickstarted"></a> 
@@ -37,6 +42,12 @@ WTSolutions 的 Excel 转 JSON 是一款**Microsoft Excel 加载项**或**Web �
 * 按照屏幕上的说明安装加载项，您将在**主页**选项卡上看到一个“JSON 转 Excel”按钮。
 * **主页**选项卡 > Excel 转 JSON > 转换
 * 现在您已准备好使用此加载项。
+
+`选项 3. HTTPS POST request to Excel to JSON`
+[https://s.wtsolutions.cn/excel-to-json-api.html](https://s.wtsolutions.cn/excel-to-json-api.html)
+
+`选项 4. AI Model MCP SSE request to Excel to JSON`
+[https://s.wtsolutions.cn/excel-to-json-mcp.html](https://s.wtsolutions.cn/excel-to-json-mcp.html)
 
 ### 获取加载项的视频指南（在 Excel 中旁加载）
 
