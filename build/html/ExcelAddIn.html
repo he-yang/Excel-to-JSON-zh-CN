@@ -1,0 +1,227 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-cn" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+  <title>3. Excel 加载项（在 Excel 中实现 Excel 转 JSON） &mdash; Excel-to-JSON 3.1.0.0 documentation</title>
+    <!-- 添加自定义的 meta 标签 -->
+     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5f275b27abf44556aa9a56e2e48433de"}'></script><!-- End Cloudflare Web Analytics -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Excel to JSON",
+          "description": "A Microsoft Excel add-in that converts Excel spreadsheets into JSON format directly within Excel. Ideal for developers and data analysts.",
+          "applicationCategory": "Data Conversion",
+          "operatingSystem": "Web"
+        }
+    </script>
+    <meta name="description"
+        content="Excel add-in Excel-to-JSON Convert Excel to JSON within Excel (web online, windows, mac, linux) Excel to JSON is a Microsoft Excel add-in which can convert Excel to JSON within Excel. Both flat and nested JSON can be converted using Excel-to-JSON add-in.
+        This add-in is available at the Microsoft store- Appsource, which can be accessed within Excel, so it does not require any download, a simple click within Excel would run the add-in.">
+    <meta name="keywords"
+        content="excel-to-json, json-to-excel, excel to json, json to excel, json, excel, conversion, mac, windows, transfer, spreadsheets, microsoft, add-in, web, online">
+    <link rel="icon" href="https://t.wtsolutions.cn/favicon.ico">
+
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="canonical" href="https://excel-to-json.wtsolutions.cn/zh-cn/latest/ExcelAddIn.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=1caf6a88"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/custom.js?v=bfd0a399"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. API (Excel to JSON by HTTPS POST request)" href="API.html" />
+    <link rel="prev" title="2. Web 应用（在网页浏览器中实现 Excel 转 JSON）" href="WebApp.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Excel-to-JSON
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">1. 快速开始</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web 应用（在网页浏览器中实现 Excel 转 JSON）</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Excel 加载项（在 Excel 中实现 Excel 转 JSON）</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.1 要求</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.2 访问方式</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#excel-excel">3.2.1 获取 Excel 加载项的视频指南（在 Excel 中侧载）</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">3.3 使用方法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">3.4 转换设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#excel-web">3.5 Excel 加载项和 Web 应用的视频指南</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">4. API (Excel to JSON by HTTPS POST request)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">5. MCP Service (Excel to JSON by AI Model MCP SSE/StreamableHTTP request)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">6. Excel数据和转换设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">7.价格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">联系方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dependencies.html">Dependencies</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Excel-to-JSON</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">3. Excel 加载项（在 Excel 中实现 Excel 转 JSON）</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ExcelAddIn.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="excel-excel-excel-json">
+<h1>3. Excel 加载项（在 Excel 中实现 Excel 转 JSON）<a class="headerlink" href="#excel-excel-excel-json" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://excel-to-json.wtsolutions.cn/en/latest/ExcelAddIn.html">English</a></p>
+<p>WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具，支持转换扁平 JSON 和嵌套 JSON。它提供了“Excel 转 JSON”的全场景解决方案，包括 Excel 加载项、Web 应用程序、开放 API 和企业级 MCP 工具：</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="WebApp.html"><span class="std std-doc">Web 应用：直接在网页浏览器中转换 Excel 为 JSON。</span></a></p></li>
+<li><p><mark>Excel 加载项：在 Excel 中转换 Excel 为 JSON，与 Excel 环境无缝集成。</mark>（&lt;– 您当前所在位置）</p></li>
+<li><p><a class="reference internal" href="API.html"><span class="std std-doc">API：通过 HTTPS POST 请求转换 Excel 为 JSON。</span></a></p></li>
+<li><p><a class="reference internal" href="MCP.html"><span class="std std-doc">MCP 服务：通过 AI 模型 MCP SSE/StreamableHTTP 请求转换 Excel 为 JSON。</span></a></p></li>
+</ul>
+<section id="id1">
+<h2>3.1 要求<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Excel 2013 Service Pack 1 或更高版本，</p></li>
+<li><p>Excel 2016 for Mac，</p></li>
+<li><p>Excel 2016 或更高版本，</p></li>
+<li><p>Excel Online，</p></li>
+<li><p>Office 365 等。</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>3.2 访问方式<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>在 Excel 2013/2016、Excel Online 或 Office 365 等中打开新的数据表</p></li>
+<li><p><strong>主页</strong>选项卡或<strong>插入</strong>选项卡 &gt; 加载项</p></li>
+<li><p>在搜索框中，输入“Excel to JSON”</p></li>
+<li><p>按照屏幕上的说明安装加载项，您将在<strong>主页</strong>选项卡上看到带有 Excel to JSON 图标的“Convert”按钮</p></li>
+<li><p><strong>主页</strong>选项卡 &gt; Excel to JSON &gt; Convert</p></li>
+<li><p>现在您已准备好使用此加载项</p></li>
+</ul>
+<section id="excel-excel">
+<h3>3.2.1 获取 Excel 加载项的视频指南（在 Excel 中侧载）<a class="headerlink" href="#excel-excel" title="Link to this heading"></a></h3>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114329529684152&bvid=BV15ddBYLEaV&cid=29388573290&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
+     crossorigin="anonymous"></script>
+<p><ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-8772217510669640"
+     data-ad-slot="2653271427"></ins></p>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p><a name="Useadd-in"></a></p>
+</section>
+</section>
+<section id="id3">
+<h2>3.3 使用方法<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>准备您的 Excel 表格</p></li>
+<li><p>点击主页选项卡上带有 Excel to JSON 图标的“Convert”按钮</p></li>
+<li><p>选择 Excel 数据源</p>
+<ul>
+<li><p>直接从 Excel 工作表中手动选择数据，或</p></li>
+<li><p>让 Excel to JSON 转换 Excel 中所有可见工作表，或 [专业版功能]</p></li>
+<li><p>让 Excel to JSON 转换 Excel 中所有工作表。[专业版功能]</p></li>
+</ul>
+</li>
+<li><p>设置<a class="reference internal" href="profeatures.html"><span class="std std-doc">转换设置</span></a></p></li>
+<li><p>点击“Go”按钮</p></li>
+<li><p>之后您将在“Go”按钮下方看到转换后的 JSON。您可以通过以下几种方式将生成的 JSON 保存到本地计算机：</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">and</span> <span class="pre">Paste</span></code>（复制粘贴）。JSON 生成后，您将在文本区域中看到它们，您可以简单地将其复制粘贴到任何地方。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Copy</span> <span class="pre">to</span> <span class="pre">Clipboard</span></code>（复制到剪贴板）。JSON 生成后，您可以找到“Copy to Clipboard”按钮，点击该按钮，JSON 将被复制到剪贴板。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">to</span> <span class="pre">File</span></code>（保存到文件）。（<code class="docutils literal notranslate"><span class="pre">Excel</span> <span class="pre">for</span> <span class="pre">Mac</span></code> 用户不可用）JSON 生成后，您可以找到“Save As”按钮，点击该按钮，系统将提示您将 JSON 保存到文件。</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id4">
+<h2>3.4 转换设置<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>详情请参考<a class="reference internal" href="profeatures.html"><span class="std std-doc">转换设置</span></a>。</p>
+</section>
+<section id="excel-web">
+<h2>3.5 Excel 加载项和 Web 应用的视频指南<a class="headerlink" href="#excel-web" title="Link to this heading"></a></h2>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114702621348629&bvid=BV16CN7zyE4d&cid=30558782233&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="WebApp.html" class="btn btn-neutral float-left" title="2. Web 应用（在网页浏览器中实现 Excel 转 JSON）" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="API.html" class="btn btn-neutral float-right" title="4. API (Excel to JSON by HTTPS POST request)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022~2025, WTSolutions.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

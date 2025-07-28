@@ -1,24 +1,33 @@
-.. Excel-to-JSON documentation documentation master file, created by
-   sphinx-quickstart on Sat Sep 17 10:05:06 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Excel-to-JSON 文档主文件，由
+   sphinx-quickstart 于 2022年9月17日星期六 10:05:06 创建。
+   您可以完全根据自己的喜好调整此文件，但至少应包含根 `toctree` 指令。
 
-Excel-to-JSON by WTSolutions, Excel 插件, 在 Excel 中将 Excel 转换为 JSON（网页在线版，Windows，Mac，Linux）
-=======================================================================================================================================================================
-Excel to JSON by WTSolutions 是一个 **Microsoft Excel 插件** 或 **在线应用**，可以在 Excel 中将 Excel 转换为 JSON。使用 Excel-to-JSON by WTSolutions可以转换扁平和嵌套的 JSON 格式。
+WTSolutions 的 Excel 转 JSON，Excel 加载项，在 Excel 内将 Excel 转换为 JSON（在线网页版、Windows、Mac、Linux）
+=================================================================================================================
 
-This is Simplified Chinese version of the documentation, refer to English version https://excel-to-json.wtsolutions.cn/en/latest/
+WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具，支持转换扁平 JSON 和嵌套 JSON。它提供了“Excel 转 JSON”的全场景解决方案，包括 Excel 加载项、Web 应用程序、开放 API 和企业级 MCP 工具：
 
+* `Web 应用：直接在网页浏览器中转换 Excel 为 JSON。 <WebApp.html>`_
+* `Excel 加载项：在 Excel 中转换 Excel 为 JSON，与 Excel 环境无缝集成。 <ExcelAddIn.html>`_
+* `API：通过 HTTPS POST 请求转换 Excel 为 JSON。 <API.html>`_
+* `MCP 服务：通过 AI 模型 MCP SSE/StreamableHTTP 请求转换 Excel 为 JSON。 <MCP.html>`_
+
+This is the Chinese Version of documentation, refer to https://excel-to-json.wtsolutions.cn/en/latest for English version.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    getstarted.md
+   WebApp.md
+   ExcelAddIn.md
+   API.md
+   MCP.md
    profeatures.md
+   pricing.md
    contact.md
    termsofuse.md
-   privacy.md   
+   privacy.md
    dependencies.md
 
 .. raw:: html

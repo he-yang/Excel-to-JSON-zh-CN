@@ -1,7 +1,10 @@
 # Privacy Policy
 
-**Effective Date:** 2025-6-11
-**Last Revised**: 2025-6-11
+**Effective Date:** 2025-7-6
+**Last Revised**: 2025-7-6
+
+This privacy policy is applicable to Excel to JSON web app, and Excel to JSON Excel add-in.
+For Excel to JSON api and Excel to JSON MCP service, refer to https://github.com/he-yang/excel-to-json-mcp for privacy policy.
 
 ## 1. Introduction
 
@@ -36,7 +39,7 @@ We want to assure you that:
 
 For Pro feature subscriptions, we collect and store:
 - Your name and contact information for subscription management purposes.
-- Payment information (processed by our secure payment gateway Stripe)
+- Payment information (processed by our secure payment gateway Stripe or Paddle)
 - Subscription status and billing history
 - Usage data related to Pro features for service improvement, such as Pro Code.
 

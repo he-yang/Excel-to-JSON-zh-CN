@@ -6,10 +6,10 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name='description' content=“Excel-to-JSON-documentation Excel-to-JSON by WTSolutions, Excel 插件, 在 Excel 中将 Excel 转换为 JSON（网页在线版，Windows，Mac，Linux）”>
     
-  <title>Excel-to-JSON by WTSolutions, Excel 插件, 在 Excel 中将 Excel 转换为 JSON（网页在线版，Windows，Mac，Linux） &mdash; Excel-to-JSON 3.0.0.0 documentation</title>
+  <title>WTSolutions 的 Excel 转 JSON，Excel 加载项，在 Excel 内将 Excel 转换为 JSON（在线网页版、Windows、Mac、Linux） &mdash; Excel-to-JSON 3.1.0.0 documentation</title>
     <!-- 添加自定义的 meta 标签 -->
+     <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5f275b27abf44556aa9a56e2e48433de"}'></script><!-- End Cloudflare Web Analytics -->
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -27,14 +27,14 @@
         content="excel-to-json, json-to-excel, excel to json, json to excel, json, excel, conversion, mac, windows, transfer, spreadsheets, microsoft, add-in, web, online">
     <link rel="icon" href="https://t.wtsolutions.cn/favicon.ico">
 
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
 
   
     <link rel="canonical" href="https://excel-to-json.wtsolutions.cn/zh-cn/latest/index.html" />
       <script src="_static/jquery.js?v=5d32c60e"></script>
       <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=6063c007"></script>
+      <script src="_static/documentation_options.js?v=1caf6a88"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="_static/custom.js?v=bfd0a399"></script>
@@ -66,10 +66,12 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">1. 快速开始</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted.html#id2">2. 系统要求</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted.html#id3">3. 快速入门</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted.html#id12">4. 示例</a></li>
-<li class="toctree-l1"><a class="reference internal" href="profeatures.html">5. 专业功能 Pro Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web 应用（在网页浏览器中实现 Excel 转 JSON）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（在 Excel 中实现 Excel 转 JSON）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">4. API (Excel to JSON by HTTPS POST request)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">5. MCP Service (Excel to JSON by AI Model MCP SSE/StreamableHTTP request)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">6. Excel数据和转换设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">7.价格</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">联系方式</a></li>
 <li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
@@ -90,7 +92,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Excel-to-JSON by WTSolutions, Excel 插件, 在 Excel 中将 Excel 转换为 JSON（网页在线版，Windows，Mac，Linux）</li>
+      <li class="breadcrumb-item active">WTSolutions 的 Excel 转 JSON，Excel 加载项，在 Excel 内将 Excel 转换为 JSON（在线网页版、Windows、Mac、Linux）</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -100,67 +102,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="excel-to-json-by-wtsolutions-excel-excel-excel-json-windows-mac-linux">
-<h1>Excel-to-JSON by WTSolutions, Excel 插件, 在 Excel 中将 Excel 转换为 JSON（网页在线版，Windows，Mac，Linux）<a class="headerlink" href="#excel-to-json-by-wtsolutions-excel-excel-excel-json-windows-mac-linux" title="Link to this heading"></a></h1>
-<p>Excel to JSON by WTSolutions 是一个 <strong>Microsoft Excel 插件</strong> 或 <strong>在线应用</strong>，可以在 Excel 中将 Excel 转换为 JSON。使用 Excel-to-JSON by WTSolutions可以转换扁平和嵌套的 JSON 格式。</p>
-<p>This is Simplified Chinese version of the documentation, refer to English version <a class="reference external" href="https://excel-to-json.wtsolutions.cn/en/latest/">https://excel-to-json.wtsolutions.cn/en/latest/</a></p>
+  <section id="wtsolutions-excel-json-excel-excel-excel-json-windowsmaclinux">
+<h1>WTSolutions 的 Excel 转 JSON，Excel 加载项，在 Excel 内将 Excel 转换为 JSON（在线网页版、Windows、Mac、Linux）<a class="headerlink" href="#wtsolutions-excel-json-excel-excel-excel-json-windowsmaclinux" title="Link to this heading"></a></h1>
+<p>WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具，支持转换扁平 JSON 和嵌套 JSON。它提供了“Excel 转 JSON”的全场景解决方案，包括 Excel 加载项、Web 应用程序、开放 API 和企业级 MCP 工具：</p>
+<ul class="simple">
+<li><p><a class="reference external" href="WebApp.html">Web 应用：直接在网页浏览器中转换 Excel 为 JSON。</a></p></li>
+<li><p><a class="reference external" href="ExcelAddIn.html">Excel 加载项：在 Excel 中转换 Excel 为 JSON，与 Excel 环境无缝集成。</a></p></li>
+<li><p><a class="reference external" href="API.html">API：通过 HTTPS POST 请求转换 Excel 为 JSON。</a></p></li>
+<li><p><a class="reference external" href="MCP.html">MCP 服务：通过 AI 模型 MCP SSE/StreamableHTTP 请求转换 Excel 为 JSON。</a></p></li>
+</ul>
+<p>This is the Chinese Version of documentation, refer to <a class="reference external" href="https://excel-to-json.wtsolutions.cn/en/latest">https://excel-to-json.wtsolutions.cn/en/latest</a> for English version.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">1. 快速开始</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted.html#id2">2. 系统要求</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted.html#id3">3. 快速入门</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="getstarted.html#excel-json">3.1 （旁）加载 Excel 转 JSON</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getstarted.html#id4">3.2 使用 Excel 转 JSON</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getstarted.html#id7">3.3 转换设置</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="getstarted.html#id12">4. 示例</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="getstarted.html#excel-1">4.1 示例 Excel 表格 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getstarted.html#excel-2">4.2 示例 Excel 表格 2</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="profeatures.html">5. 专业功能 Pro Features</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id1">5.1 订阅、付款和取消</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id3">5.2 专业功能 Pro Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id10">5.3 更多功能</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#pro-code">5.4 专业代码Pro Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profeatures.html#id11">5.5 售后服务</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="contact.html">联系方式</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="contact.html#id2">反馈表</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#introduction">1. Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#description-of-service">2. Description of Service</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#user-requirements">3. User Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#license-and-restrictions">4. License and Restrictions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#subscription-terms">5. Subscription Terms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#user-responsibilities">6. User Responsibilities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#data-privacy">7. Data Privacy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#disclaimer-of-warranties">8. Disclaimer of Warranties</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#limitation-of-liability">9. Limitation of Liability</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#termination">10. Termination</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#governing-law">11. Governing Law</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#changes-to-this-agreement">12. Changes to this Agreement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#contact-information">13. Contact Information</a></li>
-<li class="toctree-l2"><a class="reference internal" href="termsofuse.html#entire-agreement">14. Entire Agreement</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#introduction">1. Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#scope-of-this-policy">2. Scope of This Policy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#data-we-do-not-collect">3. Data We Do Not Collect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#data-we-collect-for-subscription-managementd">4. Data We Collect for Subscription Managementd</a></li>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#how-the-service-works">5. How the Service Works</a></li>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#your-responsibilities">6. Your Responsibilities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#third-party-services">7. Third-Party Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#changes-to-this-privacy-policy">8. Changes to This Privacy Policy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="privacy.html#contact-us">9. Contact Us</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="WebApp.html">2. Web 应用（在网页浏览器中实现 Excel 转 JSON）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ExcelAddIn.html">3. Excel 加载项（在 Excel 中实现 Excel 转 JSON）</a></li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">4. API (Excel to JSON by HTTPS POST request)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MCP.html">5. MCP Service (Excel to JSON by AI Model MCP SSE/StreamableHTTP request)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profeatures.html">6. Excel数据和转换设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pricing.html">7.价格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">联系方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="termsofuse.html">Service Agreement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="privacy.html">Privacy Policy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dependencies.html">Dependencies</a></li>
 </ul>
 </div>

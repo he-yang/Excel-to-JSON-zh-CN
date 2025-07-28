@@ -1,67 +1,66 @@
-# 5. 专业功能 Pro Features
+# 6. Excel数据和转换设置
 
-[English](https://excel-to-json.wtsolutions.cn/latest/profeatures.html)
+[English](https://excel-to-json.wtsolutions.cn/en/latest/profeatures.html)
 
-Excel转JSON加载项提供了一组专业功能，增强了加载项的功能性。这些功能仅对已订阅加载项的用户开放。
+WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规则。
+这些标记为[Pro Feature](pricing.md)的规则仅对已订阅工具的用户可用。
 
-## 5.1 订阅、付款和取消
+## 6.1 Excel数据
 
-7天免费试用，之后您将按以下费率之一每月支付专业功能费用（不含税）。您可以在第7天前随时取消订阅，不会被收费：
-- 美元 US$2.66 / 月，
-- 人民币 ¥19.90 / 月，
-- 欧元 €2.36 / 月，
-- 港币 HK$21.80 / 月
-- 您的当地货币（如果Stripe支持）。
+### Excel数据源
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|❌|❌|
 
-每个专业代码可支持10台设备访问专业功能。7天试用期结束后，您可以随时取消订阅，这将在当前 billing周期结束时生效。
+您可以通过两种方式将Excel数据输入到Excel转JSON Web应用和Excel加载项：
 
-每个专业代码对WTSolutions提供的Excel转JSON和[JSON转Excel](https://json-to-excel.wtsolutions.cn/en/latest/)加载项均有效。
-
-### 通过Stripe订阅
-
-[https://buy.stripe.com/00gdQT2iz0Vp32E002](https://buy.stripe.com/00gdQT2iz0Vp32E002)
-
-支付方式：
-- 银行卡（Visa、Mastercard、American Express、JCB、银联）
-- Apple Pay（需要使用Apple/IOS/Mac设备打开上述链接）
-- Google Pay（需要使用Google/Andriod设备打开上述链接）
-- Alipay 支付宝
-- Link
-
-有关订阅条款，请参阅[使用条款](termsofuse.md)
-
-### 取消订阅
-
-您可以随时取消订阅。当前 billing周期结束后，您将不再有权访问专业功能。
-
-[https://billing.stripe.com/p/login/5kQ4gyadZ7p22JY3V83Je00](https://billing.stripe.com/p/login/5kQ4gyadZ7p22JY3V83Je00)
+* `在网页浏览器中加载Excel到JSON`
+    * 复制并粘贴您的Excel数据到文本区域
+    * 您可以从Excel、Google表格或任何其他兼容Excel的软件中复制和粘贴Excel数据，数据以制表符分隔
+    * 您也可以复制和粘贴逗号分隔的CSV数据
+* `在Excel中侧载Excel到JSON`：
+    * 使用鼠标直接从Excel工作表中选择数据。
+    * 或者，让Excel转JSON转换Excel中所有可见工作表。[Pro Feature](pricing.md)
+    * 或者，让Excel转JSON转换Excel中的所有工作表。[Pro Feature](pricing.md)
 
 
-## 5.2 专业功能 Pro Features
+## 6.2 转换设置
 
-### Excel数据
+### 选择标题行或列
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|
 
-有两种方式可以将 Excel 表格加载到 Excel 转 JSON 中：
+您可以指定：
+- 第一行作为标题
+    - 第一行将被视为"标题"行，并将用作列名，后续行将被视为JSON值。
+    - 后续行将被视为"数据"行，并将被视为JSON值。
+- 第一列作为标题 [Pro Feature](pricing.md)
+    - 第一列将被视为"标题"列，并将用作JSON键，后续列将被视为JSON值。
+    - 右侧的列将被视为"数据"列，并将被视为JSON值。
 
-* `在 Web 浏览器中加载 Excel 转 JSON`
-    *  将 Excel 数据复制并粘贴到文本区域
-    *  您可以复制并粘贴来自 Excel、Google Sheets 或任何其他 Excel 兼容软件的数据，数据之间用 Tab 分隔
-    *  您也可以复制并粘贴逗号分隔的 CSV 数据
-* `在 Excel 中旁加载 Excel 转 JSON`：
-    * 直接从 Excel 工作表中选择您的数据
-    * 转换所有非隐藏数据表[Pro Feature]
-    * 转换所有数据表[Pro Feature]
+### 转换模式
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|
+
+转换模式指定如何将Excel数据转换为JSON。默认模式是`Flat`。
+
+* `flat`：将Excel数据转换为扁平结构的JSON。
+* `nested`：将Excel数据转换为嵌套结构的JSON。[Pro Feature](pricing.md)
 
 ### 嵌套JSON键分隔符
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|
 
-嵌套JSON键分隔符指定在嵌套JSON模式下如何分隔嵌套键。默认分隔符是点(.)。
+嵌套JSON键分隔符指定在嵌套JSON模式中如何分隔嵌套键。默认分隔符是点(.)。
 
 您还可以使用其他分隔符，如：
-- `点 (.)`
-- `下划线 (_)` [专业功能]
-- `双下划线 (__)` [专业功能]
-- `正斜杠 (/)` [专业功能]
-
+- `点(.)`或`"。"`
+- `下划线(_)`或`"_"` [Pro Feature](pricing.md)
+- `双下划线(__)`或`"__"` [Pro Feature](pricing.md)
+- `正斜杠(/)`或`"/"` [Pro Feature](pricing.md)
 
 例如，使用下划线(_)作为分隔符：
 
@@ -84,8 +83,7 @@ Excel转JSON加载项提供了一组专业功能，增强了加载项的功能�
 
 将生成：
 
-
-> 分别使用"_", ".", "/"作为分隔符的嵌套JSON模式
+> 使用嵌套JSON模式，分别使用分隔符"_"、"."、"/"。
 
 ```json
 [{
@@ -105,178 +103,186 @@ Excel转JSON加载项提供了一组专业功能，增强了加载项的功能�
 }]
 ```
 ### 空单元格的输出格式
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|
 
+空单元格选项通过三种方式处理Excel中的空单元格：
 
-空单元格选项提供了三种处理Excel中空单元格的方式：
+1. `空字符串 ""` 或 `"emptyString"`：将空单元格转换为空字符串 `""`
+2. `JSON null` 或 `"null"`：将空单元格转换为 `null` [Pro Feature](pricing.md)
+3. `不包含在JSON中` 或 `"exclude"`：从JSON中排除空单元格 [Pro Feature](pricing.md)。此选项在2DArray格式输出JSON中不可用。
 
-1. `空字符串 ""`：将空单元格转换为空字符串`""`
-2. `JSON null`：将空单元格转换为`null`
-3. `不包含在JSON中`：从JSON中排除空单元格
+**示例Excel表格**
 
-**Excel示例表格**
-
-|姓名|年龄|公司|
+|Name|Age|Company|
 |---|---|---|
 |David|27|WTSolutions|
 |Ton||Microsoft|
 
-> 使用 空单元格 = "null"
+> 使用空单元格 = "null"
 
 ```json
 [{
-    "姓名": "David",
-    "年龄": 27,
-    "公司": "WTSolutions"
+    "Name": "David",
+    "Age": 27,
+    "Company": "WTSolutions"
 }, {
-    "姓名": "Ton",
-    // 注意这里
-    "年龄": null,
-    "公司": "Microsoft"
+    "Name": "Ton",
+    // 看这里
+    "Age": null,
+    "Company": "Microsoft"
 }]
 ```
-> 使用 空单元格 = "空字符串"
+> 使用空单元格 = "空字符串"
 ```json
 [{
-    "姓名": "David",
-    "年龄": 27,
-    "公司": "WTSolutions"
+    "Name": "David",
+    "Age": 27,
+    "Company": "WTSolutions"
 }, {
-    "姓名": "Ton",
-    // 注意这里
-    "年龄": "",
-    "公司": "Microsoft"
+    "Name": "Ton",
+    // 看这里
+    "Age": "",
+    "Company": "Microsoft"
 }]
 ```
 > 使用空单元格 = "不包含在JSON中"
 ```json
-    "姓名": "David",
-    "年龄": 27,
-    "公司": "WTSolutions"
+    "Name": "David",
+    "Age": 27,
+    "Company": "WTSolutions"
 }, {
-    "姓名": "Ton",
-    // 注意这里
-    "公司": "Microsoft"
+    "Name": "Ton",
+    // 看这里
+    "Company": "Microsoft"
 }]
 ```
 
 ### 布尔值的输出格式
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|
 
 布尔格式指定如何转换Excel中的布尔值：
 
-1. `JSON true/false`：转换为JSON布尔值（`true`或`false`）
-2. `字符串 "true"/"false"`：转换为字符串（`"true"`或`"false"`）[专业功能]
-3. `数字 1/0`：转换为数字（`1`表示`TRUE`，`0`表示`FALSE`）[专业功能]
+1. `JSON true/false` 或 `"trueFalse"`：转换为JSON布尔值 (`true` 或 `false`)
+2. `字符串 "true"/"false"` 或 `"string"`：转换为字符串 (`"true"` 或 `"false"`) [Pro Feature](pricing.md)
+3. `数字 1/0` 或 `"10"`：转换为数字 (`1` 表示 `TRUE`，`0` 表示 `FALSE`) [Pro Feature](pricing.md)
 
+**示例Excel表格**
 
-
-**Excel示例表格**
-
-|姓名|是学生|已就业|
+|Name|IsStudent|IsEmployed|
 |---|---|---|
 |David|TRUE|FALSE|
 |Ton|FALSE|TRUE|
 
-> 使用 布尔值格式 = "JSON true/false"
+> 使用布尔格式 = "JSON true/false"
 
 ```json
 [{
-    "姓名": "David",
-    // 注意这里
-    "是学生": true,
-    "已就业": false
+    "Name": "David",
+    // 看这里
+    "IsStudent": true,
+    "IsEmployed": false
 }, {
-    "姓名": "Ton",
-    "是学生": false,
-    "已就业": true
+    "Name": "Ton",
+    "IsStudent": false,
+    "IsEmployed": true
 }]
 ```
-> 使用 布尔值格式 = "字符串 "true"/"false""
+> 使用布尔格式 = "字符串 \"true\"/\"false\""
 ```json
 [{
-    "姓名": "David",
-    // 注意这里
-    "是学生": "true",
-    "已就业": "false"
+    "Name": "David",
+    // 看这里
+    "IsStudent": "true",
+    "IsEmployed": "false"
 }, {
-    "姓名": "Ton",
-    "是学生": "false",
-    "已就业": "true"
+    "Name": "Ton",
+    "IsStudent": "false",
+    "IsEmployed": "true"
 }]
 ```
-> 使用 布尔值格式 = "数字 1/0"
+> 使用布尔格式 = "数字 1/0"
 ```json
 [{
-    "姓名": "David",
-    // 注意这里
-    "是学生": 1,
-    "已就业": 0
+    "Name": "David",
+    // 看这里
+    "IsStudent": 1,
+    "IsEmployed": 0
 }, {
-    "姓名": "Ton",
-    "是学生": 0,
-    "已就业": 1
+    "Name": "Ton",
+    "IsStudent": 0,
+    "IsEmployed": 1
 }]
 ```
 
 ### 日期格式值的输出格式
-此功能允许您将Excel中的日期值转换为特定格式，如ISO 8601或自1900-01-01以来的天数。当您在Web浏览器中加载Excel转JSON时，此功能不可用。如果您想将Excel中的日期值转换为特定格式，可以在Excel应用程序中旁加载Excel转JSON。
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|❌|✅|❌|❌|
+
+此功能允许您将Excel中的日期值转换为特定格式，如ISO 8601或自1900-01-01以来的天数。当您在网页浏览器中加载Excel到JSON时，此功能不可用。如果您想将Excel中的日期值转换为特定格式，可以在Excel应用程序中侧载Excel到JSON。
 
 日期格式指定如何转换Excel中的日期值：
 
 1. `自1900-01-01以来的天数`：转换为自1900-01-01以来的天数
-2. `字符串，ISO 8601 (YYYY-MM-DDTHH:mm:ssZ)`：转换为ISO 8601格式的字符串 [专业功能]
+2. `字符串，ISO 8601 (YYYY-MM-DDTHH:mm:ssZ)`：转换为ISO 8601格式的字符串 [Pro Feature](pricing.md)
 
 
+> <mark> 注意：日期格式功能仅在您在Excel数据表第一行添加 $date$ 作为后缀时才有效。请参考后续示例标题行。 </mark>
+> 注意：Excel无法将1900-01-01之前的日期渲染为日期格式，因此您可能会发现该单元格被解释为字符串格式。
+> 例如，如果您想将Birthday列转换为ISO8601格式，您应该在列标题中添加$date$作为后缀，如下例所示。
 
-> <mark>注意：日期格式功能仅在Excel数据表表头添加$date$后缀时才有效。</mark>
-> 注意：Excel无法将1900-01-01之前的日期渲染为日期格式，因此这些单元格可能会被解释为字符串格式。
-> 例如，如果您想将生日列转换为ISO8601格式，应在列标题中添加$date$后缀，如下例所示。
+**示例Excel表格**
 
-**Excel示例表格**
-
-|姓名|<mark>生日$date$</mark>|
+|Name|<mark>Birthday$date$</mark>|
 |---|---|
 |David|1900-01-01|
 |Ton|1995-05-15|
 
-> 使用日期格式 = "从1900-01-01开始的天数"
+> 使用日期格式 = "自1900-01-01以来的天数"
 
 ```json
 [{
-    "姓名": "David",
-    "生日": 1
+    "Name": "David",
+    "Birthday": 1
 }, {
-    "姓名": "Ton",
-    // 注意这里
-    "生日": 34834
+    "Name": "Ton",
+    // 看这里
+    "Birthday": 34834
 }]
 ```
-> 使用日期格式 = "字符串, ISO 8601 (YYYY-MM-DDTHH:mm:ssZ)"
+> 使用日期格式 = "字符串，ISO 8601 (YYYY-MM-DDTHH:mm:ssZ)"
 ```json
 [{
-    "姓名": "David",
-    "生日": "1900-01-01T00:00:00.000Z"
+    "Name": "David",
+    "Birthday": "1900-01-01T00:00:00.000Z"
 }, {
-    "姓名": "Ton",
-    // 注意这里
-    "生日": "1995-05-15T00:00:00.000Z"
+    "Name": "Ton",
+    // 看这里
+    "Birthday": "1995-05-15T00:00:00.000Z"
 }]
 ```
 
 ### JSON的输出格式
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|
 
-您有两种选择来呈现输出JSON：
-1. `对象数组`
-2. `二维数组` [专业功能]
+您可以通过两种方式呈现输出JSON：
+1. `对象数组` 或 `"arrayOfObject"`
+2. `二维数组` 或 `"2DArray"` [Pro Feature](pricing.md)
 
-
-**例子Excel表**
+**示例Excel表格**
 
 |Name|Age|Company|
 |---|---|---|
 |David|27|WTSolutions|
 |Ton|25|Microsoft|
 
-> 选用 "Array of object" .
+> 使用"对象数组"选项。
 
 ```json
 [{
@@ -291,7 +297,7 @@ Excel转JSON加载项提供了一组专业功能，增强了加载项的功能�
 }
 ]
 ```
-> 选用 "2D Array" option.
+> 使用"二维数组"选项。
 ```json
 [
     ["Name", "Age", "Company"]
@@ -300,71 +306,74 @@ Excel转JSON加载项提供了一组专业功能，增强了加载项的功能�
 ]
 ```
 
-### 单个对象JSON的输出格式
+### 单对象JSON的输出格式
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|
 
-当转换后的JSON中只有一个对象时，此选项指定如何保留单个对象JSON：
+当转换后的JSON中只有一个对象时，此选项指定如何保留单对象JSON：
 
-1. `数组 []`：转换为包含一个对象的数组
-2. `对象 {}`：转换为一个对象 [专业功能]
+1. `数组 []` 或 `"array"`：转换为包含一个对象的数组
+2. `对象 {}` 或 `"object"`：转换为一个对象 [Pro Feature](pricing.md)
 
 
+> 注意：此功能仅在转换后的JSON中只有一个对象且JSON的输出格式为对象数组时才有效。
 
-**Excel示例表格**
+**示例Excel表格**
 
-|姓名|年龄|
+|Name|Age|
 |---|---|
-|David|27|
+|David|20|
 
-> 使用单对象JSON输出格式 = "单对象JSON"
+> 使用"数组 []"
 
-```json
-{
-    "姓名": "David",
-    "年龄": 27
-}
-```
-> 使用单对象JSON输出格式 = "数组JSON"
 ```json
 [{
-    "姓名": "David",
-    "年龄": 27
+    "Name": "David",
+    "Age": 20
 }]
 ```
-
-
+> 使用"对象 {}"
+```json
+{
+    "Name": "David",
+    "Age": 20
+}
+```
 
 ### 另存为时的文件名
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|❌|❌|
 
 另存为文件名功能允许您为JSON输出文件指定自定义文件名，当您在转换后点击"另存为"按钮时。当您在此字段中输入文件名时，转换后的JSON数据将以您指定的名称保存，而不是默认名称(excel-to-json.json)。
-
-
 
 **文件名要求：**
 - 最大长度：200个字符（不包括扩展名）
 - 文件扩展名将自动设置为.json
 - 不能以点(.)或空格开头或结尾
-- 不能使用Windows保留名称（如CON、PRN、AUX等）
+- 不能使用Windows保留名称（例如，CON、PRN、AUX等）
 - 不能包含以下字符：< > : \ / | ? *
 
 **示例：**
 - 有效文件名：data.json、my_data.json、export_2024.json
 - 无效文件名：.data.json、con.json、my:data.json
 
-**支持平台：**
-- Windows版Excel：支持
-- Office.com或Onedrive上的Web版Excel：支持
+**支持的平台：**
+- Windows上的Excel：是
+- Office.com或Onedrive上的Excel网页版：是
 - Mac版Excel：不支持
-  - 如果您是Mac用户，可以使用Office.com或Onedrive上的Web版Excel
+  - 如果您是Mac用户，可以使用Office.com或Onedrive上的Excel网页版。
 
 
-## 5.3 更多功能
+## 6.3 更多功能
 
-如果您已订阅，并且希望看到更多功能，请发送电子邮件至he.yang@wtsolutions.cn
+如果您已订阅并希望看到更多功能，请通过电子邮件he.yang@wtsolutions.cn联系我们。
 
-## 5.4 专业代码Pro Code
+## 6.4 Pro Code
 
-专业代码是您在Stripe上Excel转JSON加载项结账过程中使用的`电子邮件地址`。此代码是访问专业功能所必需的。
+Pro Code是您在Stripe上购买Excel-to-JSON加载项时使用的`电子邮件地址`。此代码是访问专业功能所必需的。
 
-## 5.5 售后服务
+## 6.5 售后服务
 
-如有任何问题或疑问，请通过邮件he.yang@wtsolutions.cn联系我们。我们将在24小时内尽快回复您，最迟不超过72小时。如果问题与您的订阅相关，请在邮件中包含您的`专业代码Pro Code`。
+如有任何问题或疑虑，您可以通过电子邮件he.yang@wtsolutions.cn联系我们。我们将尽力在24小时内回复您，但不会超过72小时。如果您的问题与订阅相关，请在电子邮件中包含您的`Pro Code`。
