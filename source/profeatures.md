@@ -366,14 +366,24 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
   - 如果您是Mac用户，可以使用Office.com或Onedrive上的Excel网页版。
 
 
-## 6.3 更多功能
+## 6.3 无广告
+
+如果您拥有有效的 Excel 转 JSON 订阅，并且使用有效的 Pro 代码成功完成转换后，将不会看到广告。
+
+从下一次启动开始（您可以关闭 Excel 转 JSON 后再重新启动），Excel 转 JSON 将不再显示广告。
+
+如果您没有有效的 Pro 代码，或者没有有效的 Excel 转 JSON 订阅，将会显示广告。
+
+> 注意：如果您仍然时不时看到广告，请尝试使用有效的 Pro 代码进行一次转换，然后重启 Excel 转 JSON。
+
+
+
+## 6.4 更多功能
 
 如果您已订阅并希望看到更多功能，请通过电子邮件he.yang@wtsolutions.cn联系我们。
 
-## 6.4 Pro Code
+## 6.5 Pro Code
 
-Pro Code是您在Stripe上购买Excel-to-JSON加载项时使用的`电子邮件地址`。此代码是访问专业功能所必需的。
+Pro Code是您在Stripe或Paddle上购买Excel-to-JSON加载项时使用的`电子邮件地址`。此代码是访问专业功能所必需的。
 
-## 6.5 售后服务
 
-如有任何问题或疑虑，您可以通过电子邮件he.yang@wtsolutions.cn联系我们。我们将尽力在24小时内回复您，但不会超过72小时。如果您的问题与订阅相关，请在电子邮件中包含您的`Pro Code`。

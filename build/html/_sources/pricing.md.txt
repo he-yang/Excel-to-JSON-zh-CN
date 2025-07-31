@@ -43,3 +43,8 @@
 您可以随时取消订阅。当前订阅周期结束后，您将不再有权访问专业功能。
 
 [https://billing.stripe.com/p/login/5kQ4gyadZ7p22JY3V83Je00](https://billing.stripe.com/p/login/5kQ4gyadZ7p22JY3V83Je00)
+
+
+## 售后服务
+
+如有任何问题或疑问，您可以通过电子邮件 he.yang@wtsolutions.cn 与我们联系。我们将尽力在24小时内回复您，最迟不超过72小时。如果您的问题与订阅相关，请在邮件中包含您的 `Pro Code`。

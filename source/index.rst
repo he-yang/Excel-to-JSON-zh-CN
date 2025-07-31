@@ -5,6 +5,8 @@
 WTSolutions 的 Excel 转 JSON，Excel 加载项，在 Excel 内将 Excel 转换为 JSON（在线网页版、Windows、Mac、Linux）
 =================================================================================================================
 
+`English <https://excel-to-json.wtsolutions.cn/en/latest/>`_
+
 WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具，支持转换扁平 JSON 和嵌套 JSON。它提供了“Excel 转 JSON”的全场景解决方案，包括 Excel 加载项、Web 应用程序、开放 API 和企业级 MCP 工具：
 
 * `Web 应用：直接在网页浏览器中转换 Excel 为 JSON。 <WebApp.html>`_
@@ -12,10 +14,14 @@ WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具
 * `API：通过 HTTPS POST 请求转换 Excel 为 JSON。 <API.html>`_
 * `MCP 服务：通过 AI 模型 MCP SSE/StreamableHTTP 请求转换 Excel 为 JSON。 <MCP.html>`_
 
-This is the Chinese Version of documentation, refer to https://excel-to-json.wtsolutions.cn/en/latest for English version.
+
+此外，WTSolutions 还提供 JSON 转 Excel 工具，支持通过 Web 应用、Excel 加载项等方式将 JSON 转换为 Excel。
+
+更多详情请参考 `WTSolutions 的 JSON 转 Excel <https://JSON-to-Excel.wtsolutions.cn/>`_。
+
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
    getstarted.md
