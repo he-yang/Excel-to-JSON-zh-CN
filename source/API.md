@@ -11,7 +11,7 @@ WTSolutions的Excel转JSON是一系列工具，可将Excel转换为JSON，支持
 
 ## 4.1 需求
 
-需要HTTPS POST请求工具，如Postman、Curl、Python Requests、Javascript fetch等。
+需要HTTPS POST请求工具，如Postman、Curl、Python Requests、Javascript fetch等。智能体平台如coze。
 确保通过设置CORS头来正确处理跨域问题。
 
 ## 4.2 访问方式
@@ -339,3 +339,10 @@ API针对常见问题返回描述性错误消息：
 - `File not found`：找不到提供的URL上的文件
 - `Blank/Null/Empty cells in the first row not allowed`：当标题行包含空单元格时
 - `Server Internal Error`：发生意外错误时
+
+
+## 4.6 使用视频
+
+本视频展示的是在agents智能体平台coze上，利用本api创作的插件和智能体的使用。
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114958255789128&bvid=BV13GhhzeEhJ&cid=31439980943&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
