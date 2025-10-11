@@ -22,6 +22,7 @@
 - Excel to JSON [API](API.md)
 - JSON to Excel Web App
 - JSON to Excel Excel Addin
+- JSON to Excel API
 
 ### 通过Stripe订阅
 
