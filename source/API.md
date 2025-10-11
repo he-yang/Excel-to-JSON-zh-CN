@@ -200,7 +200,7 @@ API接受包含以下参数之一的`application/json`格式的POST请求：
 
 | 属性 | 类型 | 默认值 | 描述 |
 |------|------|--------|------|
-| [proCode](profeatures.md#pro-code) | 字符串 | "" | 用于自定义转换规则的专业代码，需要有效的[Excel转JSON服务订阅](pricing.md)。这是必需的输入。 |
+| [proCode](profeatures.md#pro-code) | 字符串 | "" | 用于自定义转换规则的专业代码，需要有效的[Excel转JSON服务订阅](pricing.md)。proCode可以通过options中参数传递，也可以在https请求头中传递proCode。 |
 | [jsonMode](profeatures.md#id5) | 字符串 | "flat" | JSON输出的格式模式："nested"（嵌套）或"flat"（扁平） |
 | [header](profeatures.md#id4) | 字符串 | "row" | 指定使用哪一行/列作为标题："row"（第一行）或"column"（第一列） |
 | [delimiter](profeatures.md#json) | 字符串 | "." | 当使用`jsonMode`为"nested"时，嵌套JSON键的分隔符，可接受的分隔符有"."、"_"、"__"、"/"。 |
@@ -210,6 +210,7 @@ API接受包含以下参数之一的`application/json`格式的POST请求：
 | [singleObjectFormat](profeatures.md#id10) | 字符串 | "array" | 当结果只有一个对象时的格式："array"（保持为数组）或"object"（返回为单个对象） |
 
 > 注意：
+> - `proCode`可以在options中参数传递，也可以在https请求头中传递proCode。`proCode`是必须的，如果您没有有效的专业代码，请参阅第4.3节 使用方法 -- 标准方式。
 > - `delimiter`仅在`jsonMode`为"nested"时有效。
 > - `singleObjectFormat`仅在`jsonFormat`为"arrayOfObject"时有效。
 > - `jsonFormat`为"2DArray"仅在`jsonMode`为"flat"时有效。
