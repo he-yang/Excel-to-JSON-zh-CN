@@ -1,4 +1,4 @@
-# 7.价格
+# 8.价格
 
 ## 订阅、付款和取消
 
@@ -19,8 +19,11 @@
 每个专业代码对WTSolutions提供的Excel转JSON和[JSON转Excel](https://json-to-excel.wtsolutions.cn/en/latest/)均有效，包含：
 - Excel to JSON [Web App](WebApp.md)
 - Excel to JSON [Excel Addin](ExcelAddIn.md)
+- Excel to JSON [WPS Addin](WPSAddIn.md)
 - Excel to JSON [API](API.md)
-- JSON to Excel
+- JSON to Excel Web App
+- JSON to Excel Excel Addin
+- JSON to Excel API
 
 ### 通过Stripe订阅
 

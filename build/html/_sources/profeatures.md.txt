@@ -1,35 +1,37 @@
-# 6. Excel数据和转换设置
+# 7. Excel数据和转换设置
 
 [English](https://excel-to-json.wtsolutions.cn/en/latest/profeatures.html)
 
 WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规则。
 这些标记为[Pro Feature](pricing.md)的规则仅对已订阅工具的用户可用。
 
-## 6.1 Excel数据
+## 7.1 数据
 
-### Excel数据源
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|❌|❌|
+### 数据源
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|❌|
 
-您可以通过两种方式将Excel数据输入到Excel转JSON Web应用和Excel加载项：
+您可以通过方式将Excel数据输入到Excel转JSON Web应用,Excel加载项,WPS加载项：
 
-* `在网页浏览器中加载Excel到JSON`
+* 网页应用`在网页浏览器中加载Excel到JSON`
     * 复制并粘贴您的Excel数据到文本区域
     * 您可以从Excel、Google表格或任何其他兼容Excel的软件中复制和粘贴Excel数据，数据以制表符分隔
     * 您也可以复制和粘贴逗号分隔的CSV数据
-* `在Excel中侧载Excel到JSON`：
-    * 使用鼠标直接从Excel工作表中选择数据。
+* Excel加载项`在Excel中侧载Excel到JSON`：
+    * 使用鼠标或者键盘直接从Excel工作表中选择数据。
     * 或者，让Excel转JSON转换Excel中所有可见工作表。[Pro Feature](pricing.md)
     * 或者，让Excel转JSON转换Excel中的所有工作表。[Pro Feature](pricing.md)
+* WPS加载项`在WPS中侧载Excel到JSON`：
+    * 使用鼠标或者键盘直接从WPS工作表中选择数据。
 
 
-## 6.2 转换设置
+## 7.2 转换设置
 
 ### 选择标题行或列
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|✅|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|✅|❌|
 
 您可以指定：
 - 第一行作为标题
@@ -40,9 +42,9 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
     - 右侧的列将被视为"数据"列，并将被视为JSON值。
 
 ### 转换模式
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|✅|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|✅|❌|
 
 转换模式指定如何将Excel数据转换为JSON。默认模式是`Flat`。
 
@@ -50,9 +52,9 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 * `nested`：将Excel数据转换为嵌套结构的JSON。[Pro Feature](pricing.md)
 
 ### 嵌套JSON键分隔符
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|✅|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|✅|❌|
 
 嵌套JSON键分隔符指定在嵌套JSON模式中如何分隔嵌套键。默认分隔符是点(.)。
 
@@ -103,11 +105,11 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 }]
 ```
 ### 空单元格的输出格式
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|✅|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|✅|❌|
 
-空单元格选项通过三种方式处理Excel中的空单元格：
+空单元格选项通过三种方式处理Excel/WPS中的空单元格：
 
 1. `空字符串 ""` 或 `"emptyString"`：将空单元格转换为空字符串 `""`
 2. `JSON null` 或 `"null"`：将空单元格转换为 `null` [Pro Feature](pricing.md)
@@ -160,11 +162,11 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 ```
 
 ### 布尔值的输出格式
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|✅|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|✅|❌|
 
-布尔格式指定如何转换Excel中的布尔值：
+布尔格式指定如何转换Excel/WPS中的布尔值：
 
 1. `JSON true/false` 或 `"trueFalse"`：转换为JSON布尔值 (`true` 或 `false`)
 2. `字符串 "true"/"false"` 或 `"string"`：转换为字符串 (`"true"` 或 `"false"`) [Pro Feature](pricing.md)
@@ -219,19 +221,19 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 ```
 
 ### 日期格式值的输出格式
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|❌|✅|❌|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|❌|✅|✅|❌|❌|
 
-此功能允许您将Excel中的日期值转换为特定格式，如ISO 8601或自1900-01-01以来的天数。当您在网页浏览器中加载Excel到JSON时，此功能不可用。如果您想将Excel中的日期值转换为特定格式，可以在Excel应用程序中侧载Excel到JSON。
+此功能允许您将Excel/WPS中的日期值转换为特定格式，如ISO 8601或自1900-01-01以来的天数。当您在网页浏览器中加载Excel到JSON时，此功能不可用。如果您想将Excel中的日期值转换为特定格式，可以在Excel/WPS应用程序中侧载Excel到JSON。
 
-日期格式指定如何转换Excel中的日期值：
+日期格式指定如何转换Excel/WPS中的日期值：
 
 1. `自1900-01-01以来的天数`：转换为自1900-01-01以来的天数
 2. `字符串，ISO 8601 (YYYY-MM-DDTHH:mm:ssZ)`：转换为ISO 8601格式的字符串 [Pro Feature](pricing.md)
 
 
-> <mark> 注意：日期格式功能仅在您在Excel数据表第一行添加 $date$ 作为后缀时才有效。请参考后续示例标题行。 </mark>
+> <mark> 注意：日期格式功能仅在您在Excel/WPS数据表第一行添加 $date$ 作为后缀时才有效。请参考后续示例标题行。 </mark>
 > 注意：Excel无法将1900-01-01之前的日期渲染为日期格式，因此您可能会发现该单元格被解释为字符串格式。
 > 例如，如果您想将Birthday列转换为ISO8601格式，您应该在列标题中添加$date$作为后缀，如下例所示。
 
@@ -267,9 +269,9 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 ```
 
 ### JSON的输出格式
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|✅|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|✅|❌|
 
 您可以通过两种方式呈现输出JSON：
 1. `对象数组` 或 `"arrayOfObject"`
@@ -307,9 +309,9 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 ```
 
 ### 单对象JSON的输出格式
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|✅|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|✅|❌|
 
 当转换后的JSON中只有一个对象时，此选项指定如何保留单对象JSON：
 
@@ -342,9 +344,9 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 ```
 
 ### 另存为时的文件名
-||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[API](API.md)|[MCP](MCP.md)|
-|:--:|:--:|:--:|:--:|:--:|
-|适用|✅|✅|❌|❌|
+||[Web应用](WebApp.md)|[Excel加载项](ExcelAddIn.md)|[WPS加载项](WPSAddIn.md)|[API](API.md)|[MCP](MCP.md)|
+|:--:|:--:|:--:|:--:|:--:|:--:|
+|适用|✅|✅|✅|❌|❌|
 
 另存为文件名功能允许您为JSON输出文件指定自定义文件名，当您在转换后点击"另存为"按钮时。当您在此字段中输入文件名时，转换后的JSON数据将以您指定的名称保存，而不是默认名称(excel-to-json.json)。
 
@@ -365,8 +367,18 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 - Mac版Excel：不支持
   - 如果您是Mac用户，可以使用Office.com或Onedrive上的Excel网页版。
 
+如果您正在侧载 Excel 转 JSON 的 Excel 加载项，并且您 Windows 系统上的 Excel 版本为 1801（Office 2019）或更高版本，您可以找到两个额外的按钮，帮助您获取工作簿名称和工作表名称。
 
-## 6.3 无广告
+**获取工作簿名称**
+- 点击"获取工作簿名称"按钮，将自动获取当前打开的Excel工作簿的名称。
+- 工作簿名称将显示在"另存为时的文件名"文本框中。
+
+**获取工作表名称**
+- 点击"获取工作表名称"按钮，将自动获取当前活动工作表的名称。
+- 工作表名称将显示在"另存为时的文件名"文本框中。
+
+
+## 7.3 无广告
 
 如果您拥有有效的 Excel 转 JSON 订阅，并且使用有效的 Pro 代码成功完成转换后，将不会看到广告。
 
@@ -378,11 +390,11 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 
 
-## 6.4 更多功能
+## 7.4 更多功能
 
 如果您已订阅并希望看到更多功能，请通过电子邮件he.yang@wtsolutions.cn联系我们。
 
-## 6.5 Pro Code
+## 7.5 Pro Code
 
 Pro Code是您在Stripe或Paddle上购买Excel-to-JSON加载项时使用的`电子邮件地址`。此代码是访问专业功能所必需的。
 
