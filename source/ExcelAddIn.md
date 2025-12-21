@@ -31,6 +31,10 @@ WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114329529684152&bvid=BV15ddBYLEaV&cid=29388573290&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
+
+
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
 <ins class="adsbygoogle"
@@ -67,5 +71,8 @@ WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具
 ## 3.5 Excel 加载项和 Web 应用的视频指南
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114702621348629&bvid=BV16CN7zyE4d&cid=30558782233&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
+
 
 

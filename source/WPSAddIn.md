@@ -24,6 +24,9 @@ WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115644276153073&bvid=BV12LS2BaEBG&cid=34420558272&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
+
+
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772217510669640"
      crossorigin="anonymous"></script>
@@ -61,6 +64,10 @@ WTSolutions 的 Excel 转 JSON 是一系列可将 Excel 转换为 JSON 的工具
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hvj-O5aIzD0?si=yQdYvZkeKM6hMj6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
+
 请参考下方视频（适用于 WPS 加载项），一个简单的使用展示：
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115658486452582&bvid=BV1Lx2hBfE8W&cid=34486354022&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)

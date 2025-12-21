@@ -348,3 +348,4 @@ API针对常见问题返回描述性错误消息：
 本视频展示的是在agents智能体平台coze上，利用本api创作的插件和智能体的使用。
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114958255789128&bvid=BV13GhhzeEhJ&cid=31439980943&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+[更多视频](https://s.wtsolutions.cn/images/videoqrcodes.png)
