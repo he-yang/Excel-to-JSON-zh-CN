@@ -20,10 +20,12 @@
 - Excel to JSON [Web App](WebApp.md)
 - Excel to JSON [Excel Addin](ExcelAddIn.md)
 - Excel to JSON [WPS Addin](WPSAddIn.md)
-- Excel to JSON [API](API.md)
+- Excel to JSON [MCP](MCP.md) (NPX connection only)
 - JSON to Excel Web App
 - JSON to Excel Excel Addin
-- JSON to Excel API
+- JSON to Excel WPS Addin
+- JSON to Excel MCP (NPX connection only)
+
 
 ### 通过Stripe订阅
 
