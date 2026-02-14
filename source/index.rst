@@ -25,6 +25,7 @@ WTSolutions 的 Excel 转 JSON 是一系列可将表格数据转换为 JSON 的�
    :maxdepth: 2
    :caption: Contents:
 
+   
    getstarted.md
    WebApp.md
    ExcelAddIn.md
@@ -33,6 +34,7 @@ WTSolutions 的 Excel 转 JSON 是一系列可将表格数据转换为 JSON 的�
    MCP.md
    profeatures.md
    pricing.md
+   announcement.md
    contact.md
    termsofuse.md
    privacy.md
