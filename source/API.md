@@ -1,21 +1,28 @@
-# 5. API (Excel to JSON by HTTPS POST request)
+# API (Excel to JSON by HTTPS POST request)
 
 [English](https://excel-to-json.wtsolutions.cn/en/latest/API.html)
 
 WTSolutions的Excel转JSON是一系列工具，可将Excel转换为JSON，支持转换为扁平结构和嵌套结构JSON。它提供了"Excel转JSON"的全场景解决方案，包括Excel加载项、Web应用、开放API和企业级MCP工具：
 
-* [Web应用：直接在Web浏览器中转换Excel到JSON。](WebApp.md)
-* [Excel加载项：在Excel中转换Excel到JSON，与Excel环境无缝集成。](ExcelAddIn.md)
-* [WPS加载项：在WPS中转换Excel到JSON，与WPS环境无缝集成。](WPSAddIn.md)
-* <mark>API：通过HTTPS POST请求转换Excel到JSON。</mark> (<-- 您当前所在位置。)
-* [MCP服务：通过AI模型MCP的SSE/流式HTTP请求转换Excel到JSON。](MCP.md)
+* 网络版方案
+     * [Web应用：直接在Web浏览器中转换Excel到JSON。](WebApp.md)
+     * [Excel加载项：在Excel中转换Excel到JSON，与Excel环境无缝集成。](ExcelAddIn.md)
+     * [WPS加载项：在WPS中转换Excel到JSON，与WPS环境无缝集成。](WPSAddIn.md)
+     * <mark>API：通过HTTPS POST请求转换Excel到JSON。</mark> (<-- 您当前所在位置。)
+     * [MCP服务：通过AI模型MCP请求转换Excel到JSON。](MCP.md)
+* 本地版方案
+     * [本地化应用：在本地安装 Excel 转 JSON 应用，支持离线转换。](LocalApp.md)
+     * [本地化 Excel 加载项：在 Excel 中转换 Excel 为 JSON，与 Excel 环境无缝集成, 支持离线转换。](LocalExcelAddin.md)
+     * [本地化 WPS 加载项：在 WPS 中转换 Excel 为 JSON，与 WPS 环境无缝集成, 支持离线转换。](LocalWPSAddin.md)
 
-## 5.1 请求
+
+
+## 请求
 
 需要HTTPS POST请求工具，如Postman、Curl、Python Requests、Javascript fetch等。智能体平台如coze。
 确保通过设置CORS头来正确处理跨域问题。
 
-## 5.2 访问方式
+## 访问方式
 
 向访问点 `https://mcp.wtsolutions.cn/excel-to-json-api` 发送`POST`请求，并包含使用部分中描述的必要参数。
 
@@ -31,9 +38,9 @@ WTSolutions的Excel转JSON是一系列工具，可将Excel转换为JSON，支持
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-## 5.3 使用方法
+## 使用方法
 
-### 5.3.1 请求格式
+### 请求格式
 
 API接受包含以下参数之一的`application/json`格式的POST请求：
 
@@ -66,7 +73,7 @@ API接受包含以下参数之一的`application/json`格式的POST请求：
 - 'data'数组中的每个JSON对象将具有与单元格值对应的值。
 
 
-### 5.3.2 选项对象
+### 选项对象
 可选的`options`对象可以包含以下属性：
 
 | 属性 | 类型 | 默认值 | 描述 |
@@ -88,7 +95,7 @@ API接受包含以下参数之一的`application/json`格式的POST请求：
 > - `proCode`不是必需的，如果没有提供proCode，最多转换6行数据。
 > - 详细的转换规则可以在[转换设置](profeatures.md)中找到。
 
-### 5.3.3 响应格式
+### 响应格式
 API返回具有以下结构的JSON对象：
 
 | 字段 | 类型 | 描述 |
@@ -98,7 +105,7 @@ API返回具有以下结构的JSON对象：
 | data | 字符串 | 如果使用URL，则为工作表对象数组；如果使用直接数据，则为字符串；如果出错，则为空字符串。|
 
 
-### 5.3.4 示例
+### 示例
 
 #### 使用'data'的请求示例
 
@@ -202,7 +209,7 @@ API返回具有以下结构的JSON对象：
 }
 ```
 
-### 5.3.5 数据类型处理
+### 数据类型处理
 此API的标准方式会自动检测并转换不同的数据类型，而在专业方式中，用户可以通过在请求体中提供'options'对象来自定义转换规则。
 - **数字**：转换为数值
 - **布尔值**：识别'true'/'false'（不区分大小写）并转换为布尔值
@@ -210,7 +217,7 @@ API返回具有以下结构的JSON对象：
 - **字符串**：视为字符串值
 - **空值**：表示为空字符串
 
-## 5.4 错误处理
+## 错误处理
 API针对常见问题返回描述性错误消息：
 - `Excel Data Format Invalid`：当输入数据不是制表符分隔或逗号分隔时
 - `At least 2 rows are required`：当输入数据少于2行时
@@ -222,7 +229,7 @@ API针对常见问题返回描述性错误消息：
 - `Max 6 rows handled, upgrade to Pro to handle more rows`：当未提供有效专业代码时，最多处理6行数据, 可升级至专业版处理更多数据。
 
 
-## 5.5 使用视频
+## 使用视频
 
 本视频展示的是在agents智能体平台coze上，利用本api创作的插件和智能体的使用。
 
