@@ -8,13 +8,17 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 数据源
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ❌       |       ❌       |
 
 您可以通过方式将Excel数据输入到Excel转JSON Web应用,Excel加载项,WPS加载项：
 
 - 网页应用`在网页浏览器中加载Excel到JSON`
+  - 复制并粘贴您的Excel数据到文本区域
+  - 您可以从Excel、Google表格或任何其他兼容Excel的软件中复制和粘贴Excel数据，数据以制表符分隔
+  - 您也可以复制和粘贴逗号分隔的CSV数据
+- 本地化应用`在本地化应用上加载Excel到JSON`
   - 复制并粘贴您的Excel数据到文本区域
   - 您可以从Excel、Google表格或任何其他兼容Excel的软件中复制和粘贴Excel数据，数据以制表符分隔
   - 您也可以复制和粘贴逗号分隔的CSV数据
@@ -29,7 +33,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 选择标题行或列
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ✅       |       ❌       |
 
@@ -44,7 +48,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 转换模式
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ✅       |       ❌       |
 
@@ -55,7 +59,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 嵌套JSON键分隔符
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ✅       |       ❌       |
 
@@ -113,7 +117,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 空单元格的输出格式
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ✅       |       ❌       |
 
@@ -175,7 +179,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 布尔值的输出格式
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ✅       |       ❌       |
 
@@ -239,7 +243,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 日期格式值的输出格式
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ❌         |             ✅             |           ✅           |       ❌       |       ❌       |
 
@@ -289,7 +293,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### JSON的输出格式
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ✅       |       ❌       |
 
@@ -333,7 +337,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 单对象JSON的输出格式
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ✅       |       ❌       |
 
@@ -370,7 +374,7 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ### 另存为时的文件名
 
-| <br /> | [Web应用](WebApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
+| <br /> | [Web应用](WebApp.md) 和 <br>[本地化应用](LocalApp.md) | [Excel加载项](ExcelAddIn.md) | [WPS加载项](WPSAddIn.md) | [API](API.md) | [MCP](MCP.md) |
 | :----: | :----------------: | :-----------------------: | :-------------------: | :-----------: | :-----------: |
 |   适用   |          ✅         |             ✅             |           ✅           |       ❌       |       ❌       |
 
@@ -424,4 +428,9 @@ WTSolutions的Excel转JSON工具提供了一系列增强工具功能的转换规
 
 ## Pro Code
 
-Pro Code是您在Stripe或Paddle上购买Excel-to-JSON加载项时使用的`电子邮件地址`。专业版包括无限制的数据转换。
+* 网络版方案
+    * Pro Code是您在Stripe上开启Excel-to-JSON订阅时使用的`电子邮件地址`。专业版包括无限制的数据转换。
+    * 网络版方案通过订阅获得专业版功能，订阅可以是月费、季度、半年、年费。
+* 本地化方案
+    * Pro Code是您在Stripe上完成本地化方案购买之后，通过电子邮件收到的Pro Code。包括无限制的数据转换。
+    * 本地化方案通过一次性购买获得专业版功能，购买后可终身使用。
