@@ -11,5 +11,4 @@
   - <mark>本地化 Excel 加载项：在 Excel 中转换 Excel 为 JSON，与 Excel 环境无缝集成, 支持离线转换。</mark>（<-- 您当前所在位置）
   - [本地化 WPS 加载项：在 WPS 中转换 Excel 为 JSON，与 WPS 环境无缝集成, 支持离线转换。](LocalWPSAddin.md)
   
-即将发布, 请保持关注，当前可以使用网络版方案。
-
+当前为 beta 版本，如果您感兴趣，请发送邮件到 he.yang@wtsolutions.cn, 我们会发送试用邀请给部分用户。
