@@ -1,4 +1,4 @@
-# 本地化应用
+# 本地化应用 (在本地应用中实现离线转换 Excel 到 JSON)
 
 [English](https://excel-to-json.wtsolutions.cn/en/latest/LocalApp.html)
 
@@ -19,11 +19,7 @@
 - MacOS 11 或更高版本
 
 ## 下载
-
-- [官网下载Windows版本](https://r2.wtsolutions.cn/e2j-releases/Excel-to-JSON-by-WTSolutions-LocalApp-6.0.0-win.exe)
-- [官网下载MacOS版本](https://r2.wtsolutions.cn/e2j-releases/Excel-to-JSON-by-WTSolutions-LocalApp-6.0.0.dmg)
-- [网盘下载1](https://pan.quark.cn/s/6e7c54e9e450)
-- [网盘下载2](https://pan.baidu.com/s/1aD0PZSVSqRC4ugrn0uqa6w?pwd=cytz)
+- [下载链接](https://s.wtsolutions.cn/latest?product=excel-to-json-local-app&language=zh)
 
 
 
