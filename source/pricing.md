@@ -87,6 +87,8 @@
 每个本地化方案的 Pro Code 对 Excel-to-JSON如下系列产品有效：
 - Excel to JSON [Local App](LocalApp.md)
 - Excel to JSON [Local Excel Addin](LocalExcelAddin.md)
+- JSON to Excel [Local App](https://json-to-excel.wtsolutions.cn/zh-cn/latest/LocalApp.md)
+- JSON to Excel [Local Excel Addin](https://json-to-excel.wtsolutions.cn/zh-cn/latest/LocalExcelAddIn.md)
 
 
 ## 售后服务
