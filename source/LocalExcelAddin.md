@@ -12,8 +12,10 @@
   - [本地化应用：在本地安装 Excel 转 JSON 应用，支持离线转换。](LocalApp.md)
   - <mark>本地化 Excel 加载项：在 Excel 中转换 Excel 为 JSON，与 Excel 环境无缝集成, 支持离线转换。</mark>（<-- 您当前所在位置）
   - [本地化 WPS 加载项：在 WPS 中转换 Excel 为 JSON，与 WPS 环境无缝集成, 支持离线转换。](LocalWPSAddin.md)
-  
-当前为 beta 版本，如果您在使用时遇到困难，请发送邮件到 he.yang@wtsolutions.cn。
+
+:::{note}
+    当前版本为 beta 版本，如果您在使用时遇到困难，请发送邮件到 he.yang@wtsolutions.cn。
+:::
 
 ## 要求
 

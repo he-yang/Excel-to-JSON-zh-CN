@@ -31,6 +31,7 @@ source_suffix = {
     '.txt': 'markdown',
     '.md': 'markdown',
 }
+myst_enable_extensions = ["colon_fence"]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -45,12 +46,30 @@ html_theme_options = {
     "nav_links": [
         {
             "title": "产品介绍",
-            "url": "https://s.wtsolutions.cn/excel-json-product.html"
+            "url": "https://s.wtsolutions.cn/excel-json-product.html",
+            "external": True
         },
         {
             "title": "Excel-to-JSON 在线应用",
-            "url": "https://s.wtsolutions.cn/excel-to-json.html"
+            "url": "https://s.wtsolutions.cn/excel-to-json.html",
+            "external": True
         },
+        {
+            "title": "相关产品",
+            "url": "products",
+            "children": [
+                {
+                    "title": "JSON-to-Excel",
+                    "url": "https://s.wtsolutions.cn/excel-json-product.html",
+                    "external": True
+                },
+                {
+                    "title": "Sheet-to-Doc",
+                    "url": "https://s.wtsolutions.cn/sheet-to-doc-product.html",
+                    "external": True
+                }
+            ]
+        }
     ]
 }
 
